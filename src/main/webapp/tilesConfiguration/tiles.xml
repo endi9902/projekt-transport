@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="base.definition"
+                template="/views/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/views/header.jsp" />
+        <put-attribute name="menu" value="/views/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/views/footer.jsp" />
+    </definition>
+
+    <definition name="appUser" extends="base.definition">
+        <put-attribute name="title" value="AppUser" />
+        <put-attribute name="body" value="/views/appUser.jsp" />
+    </definition>
+
+    <definition name="hello" extends="base.definition">
+        <put-attribute name="title" value="Hello" />
+        <put-attribute name="body" value="/views/hello.jsp" />
+    </definition>
+
+    <definition name="login" extends="base.definition">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/views/login.jsp" />
+    </definition>
+
+    <definition name="appUserRole" extends="base.definition">
+        <put-attribute name="title" value="AppUserRole" />
+        <put-attribute name="body" value="/views/appUserRole.jsp" />
+    </definition>
+    <definition name="accessDenied" extends="base.definition">
+        <put-attribute name="title" value="AccessDenied" />
+        <put-attribute name="body" value="/views/accessDenied.jsp" />
+    </definition>
+    <definition name="adminPanel" extends="base.definition">
+        <put-attribute name="title" value="AdminPanel" />
+        <put-attribute name="body" value="/views/adminPanel.jsp" />
+    </definition>
+    <definition name="connection" extends="base.definition">
+        <put-attribute name="title" value="Connection" />
+        <put-attribute name="body" value="/views/connection.jsp" />
+    </definition>
+    <definition name="address" extends="base.definition">
+        <put-attribute name="title" value="Address" />
+        <put-attribute name="body" value="/views/address.jsp" />
+    </definition>
+    <definition name="ticket" extends="base.definition">
+        <put-attribute name="title" value="Ticket" />
+        <put-attribute name="body" value="/views/ticket.jsp" />
+    </definition>
+    <definition name="findConnection" extends="base.definition">
+        <put-attribute name="title" value="FindConnection" />
+        <put-attribute name="body" value="/views/findConnection.jsp" />
+    </definition>
+    <definition name="addingTicket" extends="base.definition">
+        <put-attribute name="title" value="AddingTicket" />
+        <put-attribute name="body" value="/views/addingTicket.jsp" />
+    </definition>
+    <definition name="registration" extends="base.definition">
+        <put-attribute name="title" value="Registration" />
+        <put-attribute name="body" value="/views/registration.jsp" />
+    </definition>
+
+</tiles-definitions>
